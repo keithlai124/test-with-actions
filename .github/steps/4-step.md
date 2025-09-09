@@ -100,13 +100,13 @@ Let's add some more tests to increase coverage.
    1. Add the following 2 entries.
 
       ```py
-      def test_area_of_circle_negative_radius(self):
+      def test_area_of_circle_negative_radius():
          """Test with a negative radius to raise ValueError."""
          # Arrange
          radius = -1
 
          # Act & Assert
-         with self.assertRaises(ValueError):
+         with pytest.raises(ValueError):
             area_of_circle(radius)
       ```
 
@@ -117,7 +117,7 @@ Let's add some more tests to increase coverage.
          n = -1
 
          # Act & Assert
-         with self.assertRaises(ValueError):
+         with pytest.raises(ValueError):
             get_nth_fibonacci(n)
       ```
 
