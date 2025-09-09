@@ -111,7 +111,7 @@ Let's add some more tests to increase coverage.
       ```
 
       ```py
-      def test_get_nth_fibonacci_negative(self):
+      def test_get_nth_fibonacci_negative():
          """Test with a negative number to raise ValueError."""
          # Arrange
          n = -1
